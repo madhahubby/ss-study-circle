@@ -3,7 +3,6 @@ import type { Course } from "@/types";
 import { CourseCard } from "./CourseCard";
 import { BookMarked, NotebookText, ScrollText, Gift } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import Image from "next/image";
 
 const coursesData: Course[] = [
   {
@@ -57,13 +56,13 @@ export function CoursesSection() {
           {coursesData.map((course) => (
             <CourseCard key={course.id} course={course} />
           ))}
-          <Card className="flex flex-col h-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden bg-accent/10 border-accent">
+          <Card className="flex flex-col h-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden bg-white border-accent">
             <CardHeader className="items-center pt-6">
-                 <Gift className="h-10 w-10 text-accent-foreground mb-2" />
-                 <CardTitle className="font-headline text-2xl text-accent-foreground text-center">Special Offer!</CardTitle>
+                 <Gift className="h-10 w-10 text-accent mb-2" />
+                 <CardTitle className="font-headline text-2xl text-accent text-center">Special Offer!</CardTitle>
             </CardHeader>
             <CardContent className="pt-4 pb-6 flex-grow flex items-center justify-center">
-              <p className="font-body text-lg font-semibold text-center text-accent-foreground">
+              <p className="font-body text-lg font-semibold text-center text-accent">
                 Special discounts are given on packages!
               </p>
             </CardContent>
