@@ -9,107 +9,107 @@ body {
 
 @layer base {
   :root { /* Default theme: Dark Blue */
-    --background: 220 70% 15%; /* Dark Blue */
-    --foreground: 220 20% 90%; /* Light Grayish Blue for text */
+    --background: 220 80% 12%; /* Darker Blue for a deep, rich background */
+    --foreground: 210 25% 95%; /* Light grayish blue, almost white, for text */
 
-    --card: 220 70% 20%; /* Slightly Lighter Dark Blue Card */
-    --card-foreground: 220 20% 90%; /* Light Grayish Blue text on card */
+    --card: 220 75% 18%; /* Slightly Lighter Dark Blue Card */
+    --card-foreground: 210 25% 90%; 
 
-    --popover: 220 70% 18%; /* Dark Blue Popover */
-    --popover-foreground: 220 20% 90%; /* Light Grayish Blue text on popover */
+    --popover: 220 70% 15%; 
+    --popover-foreground: 210 25% 90%;
 
-    --primary: 210 90% 60%; /* Vibrant Blue (Brighter for primary actions) */
-    --primary-foreground: 210 100% 10%; /* Very Dark Blue/Almost Black for text on primary */
+    --primary: 210 90% 55%; /* Retain a strong blue for primary actions */
+    --primary-foreground: 210 100% 10%; 
 
-    --secondary: 220 60% 25%; /* Muted Dark Blue */
-    --secondary-foreground: 220 15% 80%; /* Lighter Grayish Blue text */
+    --secondary: 220 65% 22%; /* Muted Dark Blue */
+    --secondary-foreground: 210 20% 85%;
 
-    --muted: 220 50% 10%; /* Very Dark Muted Blue */
-    --muted-foreground: 220 15% 70%; /* Medium Grayish Blue */
+    --muted: 220 55% 10%; 
+    --muted-foreground: 210 20% 75%;
 
-    --accent: 50 100% 55%; /* Vibrant Yellow */
-    --accent-foreground: 0 0% 10%; /* Black/Very Dark Gray for text on yellow */
+    --accent: 45 100% 50%; /* Vibrant Yellow */
+    --accent-foreground: 45 100% 5%; /* Darker text for yellow button */
 
-    --destructive: 0 72% 51%; /* Default destructive red */
-    --destructive-foreground: 0 0% 98%; /* White text on red */
+    --destructive: 0 72% 51%; 
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 60% 30%; /* Medium Dark Blue Border */
-    --input: 220 70% 12%; /* Very Dark Blue for input background */
-    --ring: 50 100% 55%; /* Yellow for rings (focus) */
+    --border: 220 60% 25%; 
+    --input: 220 70% 10%; 
+    --ring: 45 100% 50%; /* Yellow for rings (focus) */
 
     --radius: 0.5rem;
 
-    --button-yellow-bg: 50 100% 55%; /* Yellow */
-    --button-yellow-fg: 0 0% 10%; /* Black for better contrast on yellow */
+    --button-yellow-bg: 45 100% 50%; /* Yellow */
+    --button-yellow-fg: 45 100% 5%; /* Dark text for yellow button */
     
     --button-custom-blue-bg: 210 80% 55%; 
-    --button-custom-blue-fg: 0 0% 100%; /* White */
+    --button-custom-blue-fg: 0 0% 100%;
 
     --chart-1: 210 80% 70%; 
     --chart-2: 180 70% 50%;
-    --chart-3: 50 90% 60%; /* Yellowish accent for charts */
-    --chart-4: 30 80% 60%; /* Orangeish accent for charts */
-    --chart-5: 0 70% 60%; /* Reddish accent for charts */
+    --chart-3: 45 90% 60%; 
+    --chart-4: 30 80% 60%; 
+    --chart-5: 0 70% 60%; 
 
-    --sidebar-background: 220 70% 12%; /* Very Dark Blue sidebar */
-    --sidebar-foreground: 220 20% 85%; /* Light Grayish Blue text */
-    --sidebar-primary: 210 90% 60%; /* Vibrant Blue */
-    --sidebar-primary-foreground: 210 100% 10%; /* Very Dark Blue */
-    --sidebar-accent: 50 100% 55%; /* Yellow */
-    --sidebar-accent-foreground: 0 0% 10%; /* Black/Very Dark Gray */
-    --sidebar-border: 220 60% 25%; /* Dark Muted Blue Border */
-    --sidebar-ring: 50 100% 55%; /* Yellow */
+    --sidebar-background: 220 80% 10%; 
+    --sidebar-foreground: 210 25% 90%; 
+    --sidebar-primary: 210 90% 55%; 
+    --sidebar-primary-foreground: 210 100% 10%; 
+    --sidebar-accent: 45 100% 50%; 
+    --sidebar-accent-foreground: 45 100% 5%; 
+    --sidebar-border: 220 60% 20%; 
+    --sidebar-ring: 45 100% 50%; 
   }
 
-  .dark { /* Alternative Dark Theme */
-    --background: 220 80% 10%; /* Even Darker Blue */
-    --foreground: 220 25% 95%; /* Off-White/Very Light Blue text */
+  .dark { /* Dark theme will also be dark blue, perhaps a slight variation if needed */
+    --background: 220 85% 8%; /* Even Darker Blue for dark mode */
+    --foreground: 210 30% 96%; /* Slightly brighter off-white for text */
 
-    --card: 220 70% 15%; /* Dark Blue Card */
-    --card-foreground: 220 25% 95%;
+    --card: 220 80% 12%; 
+    --card-foreground: 210 30% 92%;
 
-    --popover: 220 70% 12%; /* Darker Popover Blue */
-    --popover-foreground: 220 25% 95%;
+    --popover: 220 75% 10%; 
+    --popover-foreground: 210 30% 92%;
 
-    --primary: 210 90% 65%; /* Bright Blue */
-    --primary-foreground: 210 100% 8%; /* Very Dark Blue for text on primary */
+    --primary: 210 90% 60%; /* Slightly brighter primary for dark mode contrast */
+    --primary-foreground: 210 100% 8%;
 
-    --secondary: 220 60% 20%; /* Muted Darker Blue */
-    --secondary-foreground: 220 20% 85%; /* Lighter Gray-Blue */
+    --secondary: 220 70% 18%; 
+    --secondary-foreground: 210 25% 88%;
 
-    --muted: 220 50% 8%; /* Very Dark Muted Blue */
-    --muted-foreground: 220 15% 65%; /* Medium Gray-Blue */
+    --muted: 220 60% 8%; 
+    --muted-foreground: 210 20% 70%; 
 
-    --accent: 50 100% 60%; /* Vibrant Yellow, slightly brighter for dark mode */
-    --accent-foreground: 0 0% 10%; /* Black/Very Dark Gray for text on yellow */
+    --accent: 45 100% 55%; /* Slightly brighter yellow for dark mode */
+    --accent-foreground: 45 100% 5%;
 
-    --destructive: 0 63% 45%;
+    --destructive: 0 65% 48%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 50% 25%; /* Grayish Dark Blue Border */
-    --input: 220 60% 10%; /* Dark Muted Blue for input background */
-    --ring: 50 100% 60%; /* Yellow for rings */
+    --border: 220 55% 20%; 
+    --input: 220 70% 8%; 
+    --ring: 45 100% 55%; 
 
-    --button-yellow-bg: 50 100% 60%; /* Yellow */
-    --button-yellow-fg: 0 0% 10%; /* Black */
+    --button-yellow-bg: 45 100% 55%; 
+    --button-yellow-fg: 45 100% 5%; 
     
     --button-custom-blue-bg: 210 80% 50%; 
-    --button-custom-blue-fg: 0 0% 98%; /* White */
+    --button-custom-blue-fg: 0 0% 98%;
 
     --chart-1: 210 70% 65%;
     --chart-2: 180 60% 45%;
-    --chart-3: 50 80% 55%;
+    --chart-3: 45 80% 55%;
     --chart-4: 25 75% 55%;
     --chart-5: 0 65% 55%;
 
-    --sidebar-background: 220 80% 8%; /* Very Dark Blue sidebar */
-    --sidebar-foreground: 220 25% 95%; /* Off-White/Very Light Blue text */
-    --sidebar-primary: 210 90% 65%; /* Bright Blue */
-    --sidebar-primary-foreground: 210 100% 8%; /* Very Dark Blue */
-    --sidebar-accent: 50 100% 60%; /* Yellow */
-    --sidebar-accent-foreground: 0 0% 10%; /* Black/Very Dark Gray */
-    --sidebar-border: 220 50% 20%; /* Dark Muted Blue Border */
-    --sidebar-ring: 50 100% 60%; /* Yellow */
+    --sidebar-background: 220 85% 7%; 
+    --sidebar-foreground: 210 30% 92%; 
+    --sidebar-primary: 210 90% 60%; 
+    --sidebar-primary-foreground: 210 100% 8%; 
+    --sidebar-accent: 45 100% 55%; 
+    --sidebar-accent-foreground: 45 100% 5%; 
+    --sidebar-border: 220 55% 18%; 
+    --sidebar-ring: 45 100% 55%; 
   }
 }
 
