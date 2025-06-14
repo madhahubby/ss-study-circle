@@ -1,10 +1,10 @@
+
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { useFormState } from "react-dom";
-import { useEffect } from "react";
+import { useEffect, useActionState } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -35,7 +35,7 @@ const initialState: ContactFormState = {
 };
 
 export function ContactForm() {
-  const [state, formAction] = useFormState(submitContactForm, initialState);
+  const [state, formAction] = useActionState(submitContactForm, initialState);
   const { toast } = useToast();
 
   const form = useForm<ContactFormValues>({
@@ -61,7 +61,6 @@ export function ContactForm() {
         description: state.message,
         variant: "destructive",
       });
-      // Optionally set form errors from state.errors if needed
       if (state.errors) {
         (Object.keys(state.errors) as Array<keyof ContactFormValues>).forEach((key) => {
           const errorMessages = state.errors![key];
@@ -73,7 +72,6 @@ export function ContactForm() {
     }
   }, [state, toast, form]);
   
-  // Watch for form submission state to disable button
   const { isSubmitting } = form.formState;
 
   return (
