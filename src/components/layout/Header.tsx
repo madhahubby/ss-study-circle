@@ -20,12 +20,12 @@ export function Header() {
           </span>
         </Link>
         <nav className="hidden md:flex">
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-1"> {/* Adjusted space-x for padding in links */}
             {navItems.map((item) => (
               <li key={item.name}>
                 <Link
                   href={item.href}
-                  className="font-body text-sm font-medium text-foreground/80 transition-colors hover:text-accent"
+                  className="font-body text-sm font-medium text-foreground/80 transition-colors px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground"
                 >
                   {item.name}
                 </Link>
