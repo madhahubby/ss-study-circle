@@ -58,21 +58,11 @@ export function CoursesSection() {
             <CourseCard key={course.id} course={course} />
           ))}
           <Card className="flex flex-col h-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden bg-accent/10 border-accent">
-            <div className="relative w-full h-48">
-              <Image
-                src="https://placehold.co/600x400.png"
-                alt="Special Discount"
-                layout="fill"
-                objectFit="cover"
-                data-ai-hint="gift celebration"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-accent/70 to-transparent"></div>
-              <div className="absolute bottom-4 left-4">
+            <CardHeader className="items-center pt-6">
                  <Gift className="h-10 w-10 text-accent-foreground mb-2" />
-                 <CardTitle className="font-headline text-2xl text-accent-foreground">Special Offer!</CardTitle>
-              </div>
-            </div>
-            <CardContent className="pt-6 flex-grow flex items-center justify-center">
+                 <CardTitle className="font-headline text-2xl text-accent-foreground text-center">Special Offer!</CardTitle>
+            </CardHeader>
+            <CardContent className="pt-4 pb-6 flex-grow flex items-center justify-center">
               <p className="font-body text-lg font-semibold text-center text-accent-foreground">
                 Special discounts are given on packages!
               </p>
