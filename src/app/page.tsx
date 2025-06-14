@@ -20,7 +20,7 @@ export default function HomePage() {
           </div>
           <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
-              Unlock Your Potential with <br/> <span className="text-accent">SS Study Circle Hub</span>
+              Unlock Your Potential with <br/> <span className="text-accent">SS Study Circle</span>
             </h1>
             <p className="font-body text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-10">
               Dedicated to providing high-quality education and fostering a passion for learning. Explore our courses and join a community committed to excellence.
