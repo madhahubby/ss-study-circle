@@ -6,25 +6,25 @@ const testimonialsData: Testimonial[] = [
     id: "1",
     name: "Aisha Khan",
     quote: "SS Study Circle completely transformed my understanding of complex subjects. The instructors are knowledgeable and incredibly supportive.",
-    imageUrl: "https://placehold.co/100x100.png",
+    // imageUrl: "https://placehold.co/100x100.png", // Removed as per UI change
     courseTaken: "Advanced Mathematics",
-    imageHint: "smiling student",
+    imageHint: "smiling student", // Kept for potential future use, though image is removed
   },
   {
     id: "2",
     name: "Ben Carter",
     quote: "The Web Development Bootcamp was intense but rewarding. I landed a job within a month of graduating!",
-    imageUrl: "https://placehold.co/100x100.png",
+    // imageUrl: "https://placehold.co/100x100.png", // Removed as per UI change
     courseTaken: "Web Development Bootcamp",
-    imageHint: "professional portrait",
+    imageHint: "professional portrait", // Kept for potential future use
   },
   {
     id: "3",
     name: "Chloe Davis",
     quote: "I highly recommend their courses. The practical approach to learning made all the difference for me.",
-    imageUrl: "https://placehold.co/100x100.png",
+    // imageUrl: "https://placehold.co/100x100.png", // Removed as per UI change
     courseTaken: "Data Analysis with Python",
-    imageHint: "happy person",
+    imageHint: "happy person", // Kept for potential future use
   },
 ];
 

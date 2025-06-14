@@ -14,7 +14,7 @@ export function CourseCard({ course }: CourseCardProps) {
     <Card className="flex flex-col h-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden">
       <div className="relative w-full h-48">
         <Image 
-          src={`https://placehold.co/600x400.png`} 
+          src={`https://images.unsplash.com/photo-1728455635901-bb16530faf40?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`} 
           alt={course.title} 
           layout="fill" 
           objectFit="cover"
