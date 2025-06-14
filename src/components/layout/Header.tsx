@@ -18,7 +18,7 @@ export function Header() {
         <Link href="#home" className="flex items-center space-x-3">
           <BookHeart className="h-8 w-8 text-accent" />
           <span className="font-headline text-xl font-bold text-accent">
-            SS Study Circle Hub
+            SS Study Circle
           </span>
         </Link>
         <nav className="hidden md:flex">
