@@ -1,7 +1,7 @@
 import type { Course } from "@/types";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Clock, DollarSign, ListChecks } from "lucide-react";
+import { Clock, IndianRupee, ListChecks } from "lucide-react"; // Changed DollarSign to IndianRupee
 import Image from "next/image";
 
 interface CourseCardProps {
@@ -35,7 +35,7 @@ export function CourseCard({ course }: CourseCardProps) {
             <strong>Duration:</strong><span className="ml-1">{course.duration}</span>
           </div>
           <div className="flex items-center font-body text-sm">
-            <DollarSign className="h-4 w-4 mr-2 text-primary" />
+            <IndianRupee className="h-4 w-4 mr-2 text-primary" /> {/* Changed DollarSign to IndianRupee */}
             <strong>Fees:</strong><span className="ml-1">{course.fees}</span>
           </div>
           {course.prerequisites.length > 0 && (
