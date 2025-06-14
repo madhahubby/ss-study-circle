@@ -10,7 +10,7 @@ const coursesData: Course[] = [
     icon: BookMarked,
     description: "Comprehensive tuition for all subjects in 6th Class. Expert guidance to build a strong foundation.",
     duration: "1 Month",
-    fees: "₹1000 per subject",
+    fees: "RS 1000 per subject",
     prerequisites: [],
     imageHint: "classroom students",
   },
@@ -20,7 +20,7 @@ const coursesData: Course[] = [
     icon: NotebookText,
     description: "Dedicated coaching for all subjects in 7th Class, focusing on conceptual clarity and exam preparation.",
     duration: "1 Month",
-    fees: "₹1100 per subject",
+    fees: "RS 1100 per subject",
     prerequisites: [],
     imageHint: "students learning",
   },
@@ -30,7 +30,7 @@ const coursesData: Course[] = [
     icon: ScrollText,
     description: "Advanced learning support for all subjects in 8th Class, preparing students for higher secondary education.",
     duration: "1 Month",
-    fees: "₹1200 per subject",
+    fees: "RS 1200 per subject",
     prerequisites: [],
     imageHint: "teacher explaining",
   },
@@ -57,3 +57,4 @@ export function CoursesSection() {
     </section>
   );
 }
+
