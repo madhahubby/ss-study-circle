@@ -1,30 +1,31 @@
+
 import type { Testimonial } from "@/types";
 import { TestimonialCard } from "./TestimonialCard";
 
 const testimonialsData: Testimonial[] = [
   {
     id: "1",
-    name: "Aisha Khan",
-    quote: "SS Study Circle completely transformed my understanding of complex subjects. The instructors are knowledgeable and incredibly supportive.",
+    name: "Rohan Sharma",
+    quote: "The 6th class tuitions at SS Study Circle really helped me understand my NCERT science concepts much better. The teachers are very patient.",
     // imageUrl: "https://placehold.co/100x100.png", // Removed as per UI change
-    courseTaken: "Advanced Mathematics",
-    imageHint: "smiling student", // Kept for potential future use, though image is removed
+    courseTaken: "6th Class Tuition",
+    imageHint: "smiling student",
   },
   {
     id: "2",
-    name: "Ben Carter",
-    quote: "The Web Development Bootcamp was intense but rewarding. I landed a job within a month of graduating!",
+    name: "Priya Singh",
+    quote: "I used to find mathematics difficult, but after joining SS Study Circle for my 7th class NCERT syllabus, my scores have improved a lot. Thank you!",
     // imageUrl: "https://placehold.co/100x100.png", // Removed as per UI change
-    courseTaken: "Web Development Bootcamp",
-    imageHint: "professional portrait", // Kept for potential future use
+    courseTaken: "7th Class Tuition",
+    imageHint: "happy student",
   },
   {
     id: "3",
-    name: "Chloe Davis",
-    quote: "I highly recommend their courses. The practical approach to learning made all the difference for me.",
+    name: "Amit Kumar",
+    quote: "The teachers explain everything from the NCERT books in a simple way. My concepts for 8th class social studies are very clear now.",
     // imageUrl: "https://placehold.co/100x100.png", // Removed as per UI change
-    courseTaken: "Data Analysis with Python",
-    imageHint: "happy person", // Kept for potential future use
+    courseTaken: "8th Class Tuition",
+    imageHint: "focused student",
   },
 ];
 
