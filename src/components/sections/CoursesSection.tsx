@@ -12,6 +12,7 @@ const coursesData: Course[] = [
     duration: "1 Month",
     fees: "RS 1000 per subject",
     prerequisites: [],
+    imageUrl: "https://placehold.co/600x400.png",
     imageHint: "classroom students",
   },
   {
@@ -22,6 +23,7 @@ const coursesData: Course[] = [
     duration: "1 Month",
     fees: "RS 1100 per subject",
     prerequisites: [],
+    imageUrl: "https://placehold.co/601x401.png",
     imageHint: "students learning",
   },
   {
@@ -32,6 +34,7 @@ const coursesData: Course[] = [
     duration: "1 Month",
     fees: "RS 1200 per subject",
     prerequisites: [],
+    imageUrl: "https://placehold.co/602x402.png",
     imageHint: "teacher explaining",
   },
 ];
@@ -57,4 +60,3 @@ export function CoursesSection() {
     </section>
   );
 }
-

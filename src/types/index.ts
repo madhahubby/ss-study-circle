@@ -8,6 +8,7 @@ export interface Course {
   duration: string;
   fees: string;
   prerequisites: string[];
+  imageUrl: string; // Added for unique course images
   imageHint: string;
 }
 
@@ -15,7 +16,7 @@ export interface Testimonial {
   id: string;
   name: string;
   quote: string;
-  imageUrl?: string;
+  // imageUrl?: string; // Removed as per UI change
   courseTaken?: string;
   imageHint: string;
 }

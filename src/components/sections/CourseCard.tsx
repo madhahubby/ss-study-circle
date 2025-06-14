@@ -1,7 +1,7 @@
 import type { Course } from "@/types";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Clock, IndianRupee, ListChecks } from "lucide-react"; // Changed DollarSign to IndianRupee
+import { Clock, IndianRupee, ListChecks } from "lucide-react";
 import Image from "next/image";
 
 interface CourseCardProps {
@@ -14,7 +14,7 @@ export function CourseCard({ course }: CourseCardProps) {
     <Card className="flex flex-col h-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden">
       <div className="relative w-full h-48">
         <Image 
-          src={`https://images.unsplash.com/photo-1728455635901-bb16530faf40?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`} 
+          src={course.imageUrl} 
           alt={course.title} 
           layout="fill" 
           objectFit="cover"
@@ -35,7 +35,7 @@ export function CourseCard({ course }: CourseCardProps) {
             <strong>Duration:</strong><span className="ml-1">{course.duration}</span>
           </div>
           <div className="flex items-center font-body text-sm">
-            <IndianRupee className="h-4 w-4 mr-2 text-primary" /> {/* Changed DollarSign to IndianRupee */}
+            <IndianRupee className="h-4 w-4 mr-2 text-primary" />
             <strong>Fees:</strong><span className="ml-1">{course.fees}</span>
           </div>
           {course.prerequisites.length > 0 && (
