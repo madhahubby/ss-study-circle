@@ -14,8 +14,8 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
         <Link href="#home" className="flex items-center space-x-2">
-          <BookHeart className="h-8 w-8 text-primary" />
-          <span className="font-headline text-xl font-bold text-primary">
+          <BookHeart className="h-8 w-8 text-accent" />
+          <span className="font-headline text-xl font-bold text-accent">
             SS Study Circle Hub
           </span>
         </Link>
@@ -25,7 +25,7 @@ export function Header() {
               <li key={item.name}>
                 <Link
                   href={item.href}
-                  className="font-body text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
+                  className="font-body text-sm font-medium text-foreground/80 transition-colors hover:text-accent"
                 >
                   {item.name}
                 </Link>
