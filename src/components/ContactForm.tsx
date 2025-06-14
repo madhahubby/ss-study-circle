@@ -52,9 +52,14 @@ export function ContactForm() {
   useEffect(() => {
     if (state.status === "success") {
       toast({
-        title: "Message Sent!",
+        title: "Message Processed!",
         description: state.message,
       });
+      
+      // Open WhatsApp links
+      window.open('https://wa.link/j4gztt', '_blank');
+      window.open('https://wa.link/5mjm1h', '_blank');
+      
       form.reset();
     } else if (state.status === "error") {
       toast({

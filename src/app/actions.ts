@@ -1,3 +1,4 @@
+
 "use server";
 
 import { z } from "zod";
@@ -41,17 +42,19 @@ export async function submitContactForm(
 
   // Simulate API call or email sending
   console.log("Contact Form Data:", validatedFields.data);
-  await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate network delay
+  // No actual server-side email sending or database saving in this example yet.
+  // The redirection to WhatsApp will be handled on the client-side.
 
-  // Example: successful submission
+  await new Promise(resolve => setTimeout(resolve, 500)); // Simulate brief processing
+
   return {
-    message: "Thank you for your message! We will get back to you soon.",
+    message: "Your details have been submitted. You will be directed to WhatsApp shortly.",
     status: "success",
   };
 
   // Example: error during submission
   // return {
-  //   message: "An error occurred while sending your message. Please try again later.",
+  //   message: "An error occurred while processing your message. Please try again later.",
   //   status: "error",
   // };
 }
