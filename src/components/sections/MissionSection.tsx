@@ -10,7 +10,7 @@ export function MissionSection() {
             Our Mission & Values
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            At SS Study Circle, we are dedicated to fostering academic excellence and personal growth through innovative teaching and unwavering support.
+            At SS Study Circle, we are dedicated to foster academic excellence and personal growth through innovative teaching and unwavering support.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">

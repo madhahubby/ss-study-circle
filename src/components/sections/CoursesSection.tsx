@@ -1,7 +1,9 @@
 
 import type { Course } from "@/types";
 import { CourseCard } from "./CourseCard";
-import { BookMarked, NotebookText, ScrollText } from "lucide-react";
+import { BookMarked, NotebookText, ScrollText, Gift } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 const coursesData: Course[] = [
   {
@@ -12,7 +14,7 @@ const coursesData: Course[] = [
     duration: "1 Month",
     fees: "RS 1000 per subject",
     prerequisites: [],
-    imageUrl: "https://images.unsplash.com/photo-1728455635901-bb16530faf40?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "https://placehold.co/600x450.png",
     imageHint: "classroom students",
   },
   {
@@ -23,7 +25,7 @@ const coursesData: Course[] = [
     duration: "1 Month",
     fees: "RS 1100 per subject",
     prerequisites: [],
-    imageUrl: "https://plus.unsplash.com/premium_photo-1661675847741-bec292dbf23c?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Changed height
+    imageUrl: "https://placehold.co/600x420.png",
     imageHint: "students learning",
   },
   {
@@ -34,7 +36,7 @@ const coursesData: Course[] = [
     duration: "1 Month",
     fees: "RS 1200 per subject",
     prerequisites: [],
-    imageUrl: "https://images.unsplash.com/photo-1598976833830-816830d5b72b?q=80&w=1391&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Changed width
+    imageUrl: "https://placehold.co/600x480.png",
     imageHint: "teacher explaining",
   },
 ];
@@ -55,9 +57,29 @@ export function CoursesSection() {
           {coursesData.map((course) => (
             <CourseCard key={course.id} course={course} />
           ))}
+          <Card className="flex flex-col h-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 overflow-hidden bg-accent/10 border-accent">
+            <div className="relative w-full h-48">
+              <Image
+                src="https://placehold.co/600x400.png"
+                alt="Special Discount"
+                layout="fill"
+                objectFit="cover"
+                data-ai-hint="gift celebration"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-accent/70 to-transparent"></div>
+              <div className="absolute bottom-4 left-4">
+                 <Gift className="h-10 w-10 text-accent-foreground mb-2" />
+                 <CardTitle className="font-headline text-2xl text-accent-foreground">Special Offer!</CardTitle>
+              </div>
+            </div>
+            <CardContent className="pt-6 flex-grow flex items-center justify-center">
+              <p className="font-body text-lg font-semibold text-center text-accent-foreground">
+                Special discounts are given on packages!
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
   );
 }
-

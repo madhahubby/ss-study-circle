@@ -23,7 +23,7 @@ export default function HomePage() {
               Unlock Your Potential with <br/> <span className="text-accent">SS Study Circle</span>
             </h1>
             <p className="font-body text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-10">
-              Dedicated to providing high-quality education and fostering a passion for learning. Explore our courses and join a community committed to excellence.
+              Dedicated for providing high-quality education and fostering a passion for learning. Explore our courses and join a community committed to excellence.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <Button asChild variant="yellow" size="lg" className="font-body font-bold shadow-lg hover:shadow-primary/30 transition-shadow">
