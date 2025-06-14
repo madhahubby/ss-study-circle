@@ -12,7 +12,7 @@ const coursesData: Course[] = [
     duration: "1 Month",
     fees: "RS 1000 per subject",
     prerequisites: [],
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "https://images.unsplash.com/photo-1728455635901-bb16530faf40?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imageHint: "classroom students",
   },
   {
@@ -23,7 +23,7 @@ const coursesData: Course[] = [
     duration: "1 Month",
     fees: "RS 1100 per subject",
     prerequisites: [],
-    imageUrl: "https://placehold.co/600x405.png", // Changed height
+    imageUrl: "https://plus.unsplash.com/premium_photo-1661675847741-bec292dbf23c?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Changed height
     imageHint: "students learning",
   },
   {
@@ -34,7 +34,7 @@ const coursesData: Course[] = [
     duration: "1 Month",
     fees: "RS 1200 per subject",
     prerequisites: [],
-    imageUrl: "https://placehold.co/605x400.png", // Changed width
+    imageUrl: "https://images.unsplash.com/photo-1598976833830-816830d5b72b?q=80&w=1391&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Changed width
     imageHint: "teacher explaining",
   },
 ];

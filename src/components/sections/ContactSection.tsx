@@ -25,9 +25,7 @@ export function ContactSection() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="font-body text-foreground/80">
-                <p>123 Education Lane</p>
-                <p>Knowledge City, ST 54321</p>
-                <p>United States</p>
+                <p> WZ 36 A/B, Street Number 16, near pastry palace, Krishna Puri, Krishna Park, Krishna Park Extension, Tilak Nagar, New Delhi, Delhi, 110018</p>
               </CardContent>
             </Card>
             <Card className="shadow-lg">
@@ -38,8 +36,8 @@ export function ContactSection() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="font-body text-foreground/80">
-                <p>General Inquiries: (555) 123-4567</p>
-                <p>Admissions: (555) 987-6543</p>
+                <p>General Inquiries: 9910115710</p>
+                <p>Admissions: 9990197627</p>
               </CardContent>
             </Card>
              <Card className="shadow-lg">
@@ -50,8 +48,7 @@ export function ContactSection() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="font-body text-foreground/80">
-                <p>info@ssstudycircle.com</p>
-                <p>admissions@ssstudycircle.com</p>
+                <p>ssstudycircle8@gmail.com</p>
               </CardContent>
             </Card>
           </div>

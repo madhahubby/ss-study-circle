@@ -32,10 +32,11 @@ type ContactFormValues = z.infer<typeof contactFormSchema>;
 const initialState: ContactFormState = {
   message: "",
   status: "idle",
+  errors: undefined,
 };
 
 export function ContactForm() {
-  const [state, formAction] = useActionState(submitContactForm, initialState);
+  const [state, formAction, isActionPending] = useActionState(submitContactForm, initialState);
   const { toast } = useToast();
 
   const form = useForm<ContactFormValues>({
@@ -72,7 +73,6 @@ export function ContactForm() {
     }
   }, [state, toast, form]);
   
-  const { isSubmitting } = form.formState;
 
   return (
     <Form {...form}>
@@ -134,8 +134,8 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" variant="yellow" size="lg" className="w-full font-body font-bold" disabled={isSubmitting}>
-          {isSubmitting ? "Sending..." : "Send Message"}
+        <Button type="submit" variant="yellow" size="lg" className="w-full font-body font-bold" disabled={isActionPending}>
+          {isActionPending ? "Sending..." : "Send Message"}
         </Button>
       </form>
     </Form>
