@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import { BookHeart } from 'lucide-react'; // Example icon
+import { BookHeart, Menu } from 'lucide-react'; 
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
 
 const navItems = [
   { name: 'Home', href: '#home' },
@@ -20,7 +22,7 @@ export function Header() {
           </span>
         </Link>
         <nav className="hidden md:flex">
-          <ul className="flex space-x-1"> {/* Adjusted space-x for padding in links */}
+          <ul className="flex space-x-1">
             {navItems.map((item) => (
               <li key={item.name}>
                 <Link
@@ -33,7 +35,30 @@ export function Header() {
             ))}
           </ul>
         </nav>
-        {/* Mobile menu button can be added here if needed */}
+        <div className="md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu className="h-6 w-6 text-foreground" />
+                <span className="sr-only">Open menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[280px] sm:w-[320px] bg-background p-6">
+              <div className="flex flex-col space-y-5 mt-8">
+                {navItems.map((item) => (
+                  <SheetClose asChild key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="font-body text-lg font-medium text-foreground/90 transition-colors hover:text-accent py-2"
+                    >
+                      {item.name}
+                    </Link>
+                  </SheetClose>
+                ))}
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );
