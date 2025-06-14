@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { BookHeart, Menu } from 'lucide-react'; 
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle, SheetHeader } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -27,7 +27,7 @@ export function Header() {
               <li key={item.name}>
                 <Link
                   href={item.href}
-                  className="font-body text-sm font-medium text-foreground/80 transition-colors px-3 py-2 rounded-md hover:bg-accent hover:text-accent-foreground"
+                  className="font-body text-sm font-medium text-foreground/80 transition-colors px-4 py-2 rounded-md hover:bg-accent hover:text-accent-foreground"
                 >
                   {item.name}
                 </Link>
@@ -44,7 +44,10 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] sm:w-[320px] bg-background p-6">
-              <div className="flex flex-col space-y-5 mt-8">
+              <SheetHeader>
+                <SheetTitle className="font-headline text-lg text-primary mb-4">Navigation Menu</SheetTitle>
+              </SheetHeader>
+              <div className="flex flex-col space-y-5 mt-4">
                 {navItems.map((item) => (
                   <SheetClose asChild key={item.name}>
                     <Link
