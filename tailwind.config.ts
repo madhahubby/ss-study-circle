@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['var(--font-pt-sans)', 'sans-serif'],
+        headline: ['var(--font-playfair-display)', 'serif'],
         code: ['monospace'],
       },
       colors: {
@@ -48,6 +48,10 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
+        'button-yellow': 'hsl(var(--button-yellow-bg))',
+        'button-yellow-foreground': 'hsl(var(--button-yellow-fg))',
+        'button-custom-blue': 'hsl(var(--button-custom-blue-bg))',
+        'button-custom-blue-foreground': 'hsl(var(--button-custom-blue-fg))',
         chart: {
           '1': 'hsl(var(--chart-1))',
           '2': 'hsl(var(--chart-2))',
