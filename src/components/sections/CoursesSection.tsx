@@ -1,57 +1,38 @@
+
 import type { Course } from "@/types";
 import { CourseCard } from "./CourseCard";
-import { BookOpen, Code, Atom, BarChart3, Briefcase } from "lucide-react"; // Example icons
+import { BookMarked, NotebookText, ScrollText } from "lucide-react";
 
 const coursesData: Course[] = [
   {
-    id: "1",
-    title: "Advanced Mathematics",
-    icon: BookOpen,
-    description: "Master complex mathematical concepts and problem-solving techniques.",
-    duration: "12 Weeks",
-    fees: "$300",
-    prerequisites: ["Basic Algebra", "Calculus I"],
-    imageHint: "mathematics chalkboard",
-  },
-  {
-    id: "2",
-    title: "Web Development Bootcamp",
-    icon: Code,
-    description: "Become a full-stack web developer. Learn HTML, CSS, JavaScript, React, and Node.js.",
-    duration: "16 Weeks",
-    fees: "$500",
-    prerequisites: ["Basic computer literacy"],
-    imageHint: "coding laptop",
-  },
-  {
-    id: "3",
-    title: "Physics for Engineers",
-    icon: Atom,
-    description: "Explore the fundamental principles of physics relevant to engineering disciplines.",
-    duration: "10 Weeks",
-    fees: "$250",
-    prerequisites: ["High School Physics", "Calculus I"],
-    imageHint: "physics experiment",
-  },
-  {
-    id: "4",
-    title: "Data Analysis with Python",
-    icon: BarChart3,
-    description: "Learn to analyze data, create visualizations, and derive insights using Python libraries.",
-    duration: "8 Weeks",
-    fees: "$400",
-    prerequisites: ["Basic Python programming"],
-    imageHint: "data charts",
-  },
-  {
-    id: "5",
-    title: "Project Management Fundamentals",
-    icon: Briefcase,
-    description: "Understand the core principles of project management to lead successful projects.",
-    duration: "6 Weeks",
-    fees: "$200",
+    id: "class-6",
+    title: "6th Class Tuition",
+    icon: BookMarked,
+    description: "Comprehensive tuition for all subjects in 6th Class. Expert guidance to build a strong foundation.",
+    duration: "Full Academic Year",
+    fees: "₹1000 per subject",
     prerequisites: [],
-    imageHint: "team meeting",
+    imageHint: "classroom students",
+  },
+  {
+    id: "class-7",
+    title: "7th Class Tuition",
+    icon: NotebookText,
+    description: "Dedicated coaching for all subjects in 7th Class, focusing on conceptual clarity and exam preparation.",
+    duration: "Full Academic Year",
+    fees: "₹1100 per subject",
+    prerequisites: [],
+    imageHint: "students learning",
+  },
+  {
+    id: "class-8",
+    title: "8th Class Tuition",
+    icon: ScrollText,
+    description: "Advanced learning support for all subjects in 8th Class, preparing students for higher secondary education.",
+    duration: "Full Academic Year",
+    fees: "₹1200 per subject",
+    prerequisites: [],
+    imageHint: "teacher explaining",
   },
 ];
 
@@ -64,7 +45,7 @@ export function CoursesSection() {
             Our Courses
           </h2>
           <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore a variety of courses designed to enhance your skills and knowledge, tailored for success in today's competitive world.
+            We offer tailored coaching for students from 6th to 8th class, focusing on building strong academic foundations in each subject.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
