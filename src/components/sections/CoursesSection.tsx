@@ -35,7 +35,7 @@ const coursesData: Course[] = [
     duration: "1 Month",
     fees: "RS 1200 per subject",
     prerequisites: [],
-    imageUrl: "https://media.istockphoto.com/id/1160532055/photo/young-cute-indian-child-standing-over-white-background.jpg?s=612x612&w=0&k=20&c=GAEyhoXKjKl3QxYgbe3xA4EcO4w60jdts8YlSCYyig0=g",
+    imageUrl: "https://media.istockphoto.com/id/1160532194/photo/young-cute-indian-child-standing-over-white-background.jpg?s=612x612&w=0&k=20&c=1dXFQ9_2a1VNHbVO2a_8_Pia14QtTSYosZaZxp2rbsM=",
     imageHint: "teacher explaining",
   },
 ];
