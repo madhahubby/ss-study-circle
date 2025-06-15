@@ -13,7 +13,7 @@ const coursesData: Course[] = [
     duration: "1 Month",
     fees: "RS 1000 per subject",
     prerequisites: [],
-    imageUrl: "https://placehold.co/600x450.png",
+    imageUrl: "https://media.istockphoto.com/id/578790220/photo/indian-boy-or-kid-studying-on-study-table.jpg?s=612x612&w=0&k=20&c=it7UnZd8vzF7KtrwjmFx3d0xzknSGj2WE4tHMg0Q2uU=",
     imageHint: "classroom students",
   },
   {
@@ -24,7 +24,7 @@ const coursesData: Course[] = [
     duration: "1 Month",
     fees: "RS 1100 per subject",
     prerequisites: [],
-    imageUrl: "https://placehold.co/600x420.png",
+    imageUrl: "https://media.istockphoto.com/id/1564685292/photo/indian-girl-child-education.jpg?s=612x612&w=0&k=20&c=rEg6Vz4Kplyd1-gjST0CNF5UfI_YfCZuU0OOFaS0CUM=",
     imageHint: "students learning",
   },
   {
@@ -35,7 +35,7 @@ const coursesData: Course[] = [
     duration: "1 Month",
     fees: "RS 1200 per subject",
     prerequisites: [],
-    imageUrl: "https://placehold.co/600x480.png",
+    imageUrl: "https://media.istockphoto.com/id/1160532055/photo/young-cute-indian-child-standing-over-white-background.jpg?s=612x612&w=0&k=20&c=GAEyhoXKjKl3QxYgbe3xA4EcO4w60jdts8YlSCYyig0=g",
     imageHint: "teacher explaining",
   },
 ];
